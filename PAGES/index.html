@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <script src="/js/main.js" defer></script>
+  <title>My Travel Blog</title>
+</head>
+
+<body>
+  <!------------------------------------------------------NAVBAR------------------------------------------------------>
+
+  <!--I made this navigation bar (nav) with an ordered list (ul) of menu items (li) that contain links (a) to different pages 
+    (index.html, iceland.html, england.html, ireland.html , spain.html, scotland.html and wales.html) , in this way the user can navigate at the menubar.-->
+  <nav class="navStyle">
+    <ul>
+      <li><a href="/PAGES/index.html">HOME</a></li>
+      <li><a href="/PAGES/iceland.html">ICELAND</a></li>
+      <li><a href="/PAGES/england.html">ENGLAND</a></li>
+      <li><a href="/PAGES/ireland.html">IRELAND</a></li>
+      <li><a href="/PAGES/spain.html">SPAIN</a></li>
+      <li><a href="/PAGES/scotland.html">SCOTLAND</a></li>
+      <li><a href="/PAGES/wales.html">WALES</a></li>
+    </ul>
+  </nav>
+  <!------------------------------------------------------NAVBAR(END)------------------------------------------------------>
+
+  <!------------------------------------(Short description about blog)---------------------------------->
+
+  <!-- A space where i created a Title h1 to present my travel blog-->
+  <div class="myPerfil perfilDatails">
+    <div class="perfil">
+      <h2>Hi,
+        My name is Lucas and this is my Travel Blog.
+      </h2>
+    </div>
+    <!------------------------------------Short description about blog(END)---------------------------------->
+
+
+    <!------------------------------------3MAIN PICS AFTER NAVBAR---------------------------------->
+    <!--Sector where i selected 3 main pictures that can be found inside of the img folder-->
+    <div>
+      <img src="/imgs/rock.jpeg">
+    </div>
+    <div>
+      <img src="/imgs/airplane.jpeg">
+    </div>
+    <div>
+      <img src="/imgs/northface.jpeg">
+    </div>
+  </div>
+  <!------------------------------------3MAIN PICS AFTER NAVBAR(END)---------------------------------->
+
+
+  <!------------------------------------(SEARCH SPECIFIC COUNTRY NAME)---------------------------------->
+  <!--Creating an image that covers the entire screen + Text + input + button where the user can perform a search. 
+  The details of this section are specified in the main.js file. -->
+  <div class="falls">
+    <img src="/imgs/mountain.jpeg" class="falls-img">
+    <div class="falls-content">
+      <h1>Discover My Albums</h1>
+      <input id="country-input" type="text" placeholder="Write the country name">
+      <button id="travel-button" class="botao">Travel</button>
+      <h2>"Always looking for a new trip"</h2>
+    </div>
+  </div>
+  <!------------------------------------SEARCH SPECIFIC COUNTRY NAME(END)---------------------------------->
+
+
+  <!------------------------------------(Country-specific cards for browsing)---------------------------------->
+
+  <!--Created a button inside a card where the user can click and go to the specific page linked with the corresponding HTML. 
+  Different IDs were used for each country and for the function to call the specific named ID.-->
+  <section class="cards">
+    <div class="detailsAbout">
+      <h2>Country: Iceland</h2>
+      <h2>City: Reiquiavik</h2>
+      <h2>Stayed: 7 days</h2>
+      <h2>Money: Icelandic krona</h2>
+      <p>The most adventurous country I've ever visited..</p>
+      <button id="specificCountryOne" class="botaoTwo">Travel</button>
+    </div>
+
+    <div class="detailsAbout">
+      <h2>Country: England</h2>
+      <h2>City: Valencia</h2>
+      <h2>Lived: 3 years</h2>
+      <h2>Money: Pounds</h2>
+      <p>I lived there for 3 years and it made me support Manchester City.</p>
+      <button id="specificCountryTwo" class="botaoTwo">Travel</button>
+    </div>
+
+    <div class="detailsAbout">
+      <h2>Country: Spain</h2>
+      <h2>City: Valencia</h2>
+      <h2>Population:</h2>
+      <h2>Money: Euro</h2>
+      <p>City I'm living now and I love being here..</p>
+      <button id="specificCountryThree" class="botaoTwo">Travel</button>
+    </div>
+
+    <div class="detailsAbout">
+      <h2>Country: Scotland</h2>
+      <h2>City: Valencia</h2>
+      <h2>Population:</h2>
+      <h2>Money: Pounds</h2>
+      <p>A historic city with castle and cathedrals to visit..</p>
+      <button id="specificCountryFour" class="botaoTwo">Travel</button>
+    </div>
+  </section>
+  <!------------------------------------Country-specific cards for browsing(END)---------------------------------->
+
+
+  <!------------------------------------(Footer)---------------------------------->
+
+  <!--I separated this part into 3 blocks to create a responsive footer with basic information with h3 as title and paragraphs.-->
+  <footer>
+    <div class="container">
+      <div class="line">
+        <div class="column">
+          <h3>Who am I?</h3>
+          <p>Hi , my name is Lucas , I'm 33 years old and I live in Valencia-SPAIN.
+            I have a degree in dentistry and I am changing my profession to Technology and I am looking for an
+            opportunity in the job market..</p>
+        </div>
+        <div class="column">
+          <h3>Travel Plans</h3>
+          <p>My next travel plans are to South Korea and Japan..</p>
+        </div>
+        <div class="column">
+          <h3>WHY TRAVEL?</h3>
+          <p>Traveling is a way to connect with people, food and cultures, and to break your boundaries outside your
+            everyday life..</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!------------------------------------Footer(END)---------------------------------->
+
+</body>
+
+</html>

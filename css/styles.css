@@ -1,0 +1,259 @@
+/*Zero value for the padding and margin values*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*--------------------------NAVBAR--------------------------*/
+/*--------------------------navigation bar that has been stylized with a light blue background,
+ a height of 45 pixels and elements evenly distributed along the horizontal axis.--------------------------*/
+.navStyle {
+  background-color: rgb(160, 200, 240);
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/*A list of navigation items was created within a navigation element,
+ defining the spacing, the list style and the text style of the links.*/
+nav ul {
+  list-style: none;
+  line-height: 45px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 1.3%;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 0, 81em;
+  text-decoration: none;
+}
+
+/*--------------------------NAVBAR(END)--------------------------*/
+
+
+
+
+/*--------------------------Text to present my Travel Blog--------------------------*/
+
+/* I made a small apresentation Title to my blog with a Text to in absolute position with the image*/
+.perfil {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+}
+
+.perfil,
+h2 {
+  text-align: center;
+  justify-content: flex;
+
+}
+
+.perfilDatails {
+  height: 0%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
+/*--------------------------Text to present my Travel Blog (END)--------------------------*/
+
+
+
+
+/*--------------------------Image Discover My Albums--------------------------*/
+
+/*I have defined that the maximum width of the elements should be 100% of their container size and height as well.
+I put special styles for this button and also hover.
+I have completed customizing the appearance of a specific text entry field
+by setting its size, spacing, background color, text color, and border.*/
+
+.myPerfil,
+img {
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+}
+
+.botao {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(236, 240, 234);
+  margin: 10px;
+}
+
+.botao:hover {
+  background-color: rgb(26, 157, 87);
+}
+
+.falls-content input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+}
+
+.falls-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.falls-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.falls-img {
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.falls {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+/*--------------------------Image Discover My Albums(END)--------------------------*/
+
+
+
+
+/*------------------------------------SEARCH SPECIFIC COUNTRY NAME----------------------------------*/
+
+/*I created some cards where the user can navigate to a specific country where I have visited, each button takes you to a different country.
+Cards were created to pass text data inside and at the same time provide a responsiveness when minimizing the screen by passing the cards
+one below the other. A specific button was also made in order to navigate to a specific country.
+*/
+.detailsAbout {
+  margin: 40px;
+  padding: 20px;
+  background-color: #b8d4e8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  max-width: 300px;
+  width: 20em;
+  height: 25em;
+  border: 2px solid black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detailsAbout h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.detailsAbout p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.botaoTwo {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botaoTwo:hover {
+  background-color: #007bff;
+}
+
+.textGap,
+h2,
+button {
+  text-align: center;
+  padding: 10px;
+}
+
+/*------------------------------------SEARCH SPECIFIC COUNTRY NAME(END)----------------------------------*/
+
+
+/* -------------------------Footer-------------------------*/
+/*A container class was created that limits the maximum width of the footer section to 1200 pixels and also 
+helps center the content horizontally with margin: 0 auto;.I decided to create the row class to define a flexible row layout with the col-md-4
+element boxes (three columns in total to make the footer more attractive) 
+
+Also distributed evenly with a space between them (justify-content: space-between;). 
+Now the col-md-4 class sets the width of all columns using a calc(33.33% - 20px), which represents one third of the total line width and also a margin
+to the right with 20 pixels for the space between the present columns.*/
+footer {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container,
+p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: calc(33.33% - 20px);
+}
+
+
+/* -------------------------Footer(END)-------------------------*/
